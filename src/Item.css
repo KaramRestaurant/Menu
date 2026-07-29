@@ -1,0 +1,58 @@
+.itemDiv{
+    background-color: #F8F3EA;
+    width:100%;
+    height:100px;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #E6DAC8;
+    box-shadow: 0px 3px 8px rgba(92, 44, 22, 0.08), 
+              0px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.itemImg{
+    width:100px;
+    height:100px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+.menu-item-title {
+  /* Font Family & Style */
+  font-family: 'Cinzel', 'Playfair Display', 'Georgia', serif;
+  font-size: 1.25rem;       /* Approx. 20px */
+  font-weight: 700;
+  color: #3b170c;           /* Deep dark brownish-maroon */
+  
+  /* Layout Spacing */
+  margin-bottom: 4px;
+  line-height: 1.2;
+  margin-left:40px;
+}
+
+.menu-item-description {
+  /* Font Family & Style */
+  font-family: 'Lora', 'Georgia', serif;
+  font-size: 0.875rem;      /* Approx. 14px */
+  font-weight: 400;
+  color: #5c4436;           /* Soft medium brown */
+  
+  /* Layout Spacing */
+  line-height: 1.4;
+  margin: 0;
+}
+
+.menu-item-price {
+  font-family: 'Cinzel', 'Playfair Display', 'Georgia', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3b170c;
+  align-self: center;
+}
+
+.text-title-item{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
