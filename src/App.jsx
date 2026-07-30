@@ -32,7 +32,7 @@ function App() {
     { firstName: 'Fatte Grape Leaves', secondName: 'قتة ورق عنب', price: '500,000 LBP' }
   ]
 
-    const hotMezza = [
+  const hotMezza = [
     { firstName: 'Frites', secondName: 'بطاطا', price: '300,000 LBP' },
     { firstName: 'Batata Kezbra', secondName: 'بطاطا بكزبرة', price: '400,000 LBP' },
     { firstName: 'Batata grille + pesto', secondName: 'بطاطا مشوية + بيستو', price: '450,000 LBP' },
@@ -86,13 +86,12 @@ function App() {
       </nav>
 
       <div>
-        <div> <p className="authenticMenuText">Our Authentic Menu</p></div>
-        <div className="dividerClass">
-          <Divider />
-        </div>
         {/* <div className='itemDivMain'>
           <Item />
         </div> */}
+      </div>
+      <div>
+        <p className="sectionText"><span className="redLetter">H</span>ot <span className="redLetter">M</span>ezza</p>
       </div>
       <div className="menu-container-main">
         <div className="menu-container">
@@ -103,7 +102,41 @@ function App() {
           ))}
         </div>
       </div>
+      <div>
+        <p className="sectionText"><span className="redLetter">C</span>old <span className="redLetter">M</span>ezza</p>
+      </div>
+      <div className="menu-container-main">
+        <div className="menu-container">
+          {items.map((item, index) => (
+            <div key={index} className="menu-item">
+              <ItemSquare />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>        <p className="sectionText"><span className="redLetter">S</span>alads</p></div>
+      <div className="menu-container-main">
+        <div className="menu-container">
+          {items.map((item, index) => (
+            <div key={index} className="menu-item">
+              <ItemSquare />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <p className="sectionText"><span className="redLetter">M</span>ain <span className="redLetter">D</span>ishes</p>
 
+      </div>
+      <div className="menu-container-main">
+        <div className="menu-container">
+          {items.map((item, index) => (
+            <div key={index} className="menu-item">
+              <ItemSquare />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +23,18 @@ body {
   background-color: #8B1E1E;
   position: relative;
   margin-top: 30px
+}
+
+.redLetter {
+  color: #8B1E1E;
+    font-family: 'Playfair Display SC', serif;
+
+}
+
+.sectionText {
+  margin-top: 20px;
+  color: #5c4436;
+  font-size: 20px;
 }
 
 .nav-links {
@@ -97,7 +111,7 @@ body {
     margin-right: 25px;
   }
 
-  .menu-container-main{
+  .menu-container-main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,11 +120,11 @@ body {
   .menu-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:30px
+    gap: 30px
   }
 
   .menu-item {
-    padding-top:20px;
+    padding-top: 20px;
     border-radius: 10px;
   }
 
