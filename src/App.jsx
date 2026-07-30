@@ -4,9 +4,19 @@ import './App.css'
 import wallpaper from "./assets/wallpaper.jpeg";
 import Divider from './Divider.jsx'
 import Item from './item.jsx'
+import ItemSquare from './ItemSquare.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
+
+   const items = [
+    "Pizza",
+    "Burger",
+    "Pasta",
+    "Salad",
+    "Dessert",
+    "Drinks",
+  ];
 
   return (
     <div className="hero" style={{ backgroundImage: `url(${wallpaper})` }}>
@@ -28,11 +38,18 @@ function App() {
         <div className="dividerClass">
           <Divider />
         </div>
-        <div className='itemDivMain'>
+        {/* <div className='itemDivMain'>
           <Item />
-        </div>
-
+        </div> */}
       </div>
+          <div className="menu-container">
+              {items.map((item, index) => (
+        <div key={index} className="menu-item">
+           <ItemSquare />
+        </div>
+      ))}
+   
+    </div>
     </div>
   )
 }

@@ -33,7 +33,7 @@
 .menu-item-description {
   /* Font Family & Style */
   font-family: 'Lora', 'Georgia', serif;
-  font-size: 0.875rem;      /* Approx. 14px */
+  font-size: 20px;      /* Approx. 14px */
   font-weight: 400;
   color: #5c4436;           /* Soft medium brown */
   
@@ -44,7 +44,7 @@
 
 .menu-item-price {
   font-family: 'Cinzel', 'Playfair Display', 'Georgia', serif;
-  font-size: 1.25rem;
+  font-size: 15px;
   font-weight: 600;
   color: #3b170c;
   align-self: center;

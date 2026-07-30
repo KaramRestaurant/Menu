@@ -10,9 +10,9 @@ function Item() {
             <div className="text-title-item">
                 <div className="menu-item-text">
                     <h3 className="menu-item-title">Hummus Karam</h3>
-                    <p className="menu-item-description">Tahini, olive oil and sumac yay yay.</p>
+                    <p className="menu-item-description">حمص كرم</p>
                 </div>
-                <span className="menu-item-price">$6</span>
+                <span className="menu-item-price">450 000 LBP</span>
             </div>
         </div>
     )
