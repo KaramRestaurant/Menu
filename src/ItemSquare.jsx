@@ -9,7 +9,7 @@ function ItemSquare() {
                 <img src={Fatte} alt={Fatte} className="itemImgSquare" />
             </div>
             <div className="textItemsDiv">
-                <div >
+                <div>
                     <p className="textStyleMainTitle">Hummus Karam</p>
                     <p className="textStyleSecondTitle">حمص كرم</p>
                     <p className="textStylePrice">450 000 LBP</p>

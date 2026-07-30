@@ -9,7 +9,7 @@ import ItemSquare from './ItemSquare.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
-   const items = [
+  const items = [
     "Pizza",
     "Burger",
     "Pasta",
@@ -19,7 +19,7 @@ function App() {
   ];
 
   return (
-    <div className="hero" style={{ backgroundImage: `url(${wallpaper})`,backgroundRepeat:'repeat' }}>
+    <div className="hero" style={{ backgroundImage: `url(${wallpaper})`, backgroundRepeat: 'repeat' }}>
       <nav className="navbar">
 
         <div className="logo">
@@ -42,14 +42,16 @@ function App() {
           <Item />
         </div> */}
       </div>
-          <div className="menu-container">
-              {items.map((item, index) => (
-        <div key={index} className="menu-item">
-           <ItemSquare />
-        </div>
-      ))}
-   
-    </div>
+      <div className="menu-container-main">
+      <div className="menu-container">
+        {items.map((item, index) => (
+          <div key={index} className="menu-item">
+            <ItemSquare />
+          </div>
+        ))}
+      </div>
+      </div>
+
     </div>
   )
 }

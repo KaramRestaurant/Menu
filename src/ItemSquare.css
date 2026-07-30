@@ -1,5 +1,5 @@
 .mainSquareItemDiv {
-    width: 140px;
+    width: 150px;
     height: 260px;
     background-color: red;
     border-radius: 8px;
@@ -11,14 +11,14 @@
 }
 
 .itemImgSquare {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
 .textItemsDiv {
-    width: 140px;
+    width: 150px;
     height: 100px;
 }
 
