@@ -19,7 +19,7 @@ function App() {
   ];
 
   return (
-    <div className="hero" style={{ backgroundImage: `url(${wallpaper})` }}>
+    <div className="hero" style={{ backgroundImage: `url(${wallpaper})`,backgroundRepeat:'repeat' }}>
       <nav className="navbar">
 
         <div className="logo">
