@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    height: 180px;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 60px; */
+    background-color: #8B1E1E;
+    color: white;
+}
+
+.footer-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.instagram-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-location {
+    width:50%;
+    text-align: center;
+    align-content: center;
+    padding-left: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
