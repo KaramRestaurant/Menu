@@ -22,7 +22,7 @@ function Footer() {
                     <img src={TikTok} alt="tiktok" className="instagram-icon" />
                     <span>TikTok</span>
                 </a>
-                <a className="instagram" href="https://wa.me/96171123456">
+                <a className="instagram" href="https://wa.me/96171960554">
                     <img src={Phone} alt="phone" className="instagram-icon" />
                     <span>71 960 554</span>
                 </a>
