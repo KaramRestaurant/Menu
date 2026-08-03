@@ -217,7 +217,7 @@ function App() {
                   </div>
                   <button className="buttonDiv" onClick={() =>
                     window.open(
-                      `https://wa.me/${phoneNumber}`)}>Open Whatsapp Chat</button>
+                      `https://wa.me/96171960554`)}>Open Whatsapp Chat</button>
                 </div>
                 <div className='innerReservationDiv'>
                   <div><p>Phone Call Reservation</p></div>
