@@ -63,7 +63,7 @@ function App() {
   const hotMezza = [
     { firstName: 'Frites', secondName: 'بطاطا', price: '300,000 LBP', image: Fries },
     { firstName: 'Batata Kezbra', secondName: 'بطاطا بكزبرة', price: '400,000 LBP', image: BatataKouzbara },
-    { firstName: 'Batata grille + pesto', secondName: 'بطاطا مشوية + بيستو', price: '450,000 LBP' },
+    { firstName: 'Batata + pesto', secondName: 'بطاطا + بيستو', price: '450,000 LBP' },
     { firstName: 'Pates piece', secondName: 'معجنات (قطعة)', price: '50,000 LBP', image: R2a2at },
     { firstName: 'Saucissions / Soujok', secondName: 'سجق/مقانق', price: '600,000 LBP', image: M2ane2 },
     { firstName: 'Foie de beuf', secondName: 'قصبة بقر', price: '600,000 LBP', image: Asbet },
@@ -89,7 +89,7 @@ function App() {
   const mashewe = [
     { firstName: 'Viande 200g', secondName: 'لحمة ', price: '750,000 LBP', image: Mashewe },
     { firstName: 'Kafta/Kabab 200g', secondName: 'كفتة/كباب', price: '750,000 LBP', image: Mashewe },
-    { firstName: 'Aarayes Kafta/Kabab 200g', secondName: ' عرايس كفتة/ كباب', price: '800,000 LBP' },
+    { firstName: 'Aarayes Kafta/Kabab', secondName: ' عرايس كفتة/ كباب', price: '800,000 LBP' },
     { firstName: 'Tawouk 200g', secondName: 'طاووق', price: '700,000 LBP', image: Mashewe },
     { firstName: 'Kebbe crue', secondName: 'كبة نية', price: '900,000 LBP' },
     { firstName: 'Mix Barbecue 1kg', secondName: 'مشاوي مشكل', price: '3,600,000 LBP', image: MixMashewe },
@@ -102,7 +102,8 @@ function App() {
     setSelected(e)
   }
   return (
-    <div className="hero" style={{ backgroundImage: `url(${wallpaper})`, backgroundRepeat: 'repeat' }}>
+    <div className="hero" style={{ backgroundImage: `url(${wallpaper})`, backgroundRepeat: 'repeat',backgroundSize:'auto' }}>
+     
       <nav className="navbar">
 
         <div className="logo">
@@ -114,6 +115,8 @@ function App() {
           <a href="#" onClick={() => handleClick('Reservations')}>Reservations</a>
         </div>
       </nav>
+
+<main className="page-content">
       {selected == 'Menu' ?
         <div>
           <div>
@@ -238,9 +241,10 @@ function App() {
             </div>
             :
             null}
-      <div className="footerName">
+  </main>
+  <div style={{width:'100%',height:'20px'}}></div>
         <Footer />
-      </div>
+   
     </div>
   )
 }
