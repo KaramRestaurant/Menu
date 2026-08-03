@@ -60,7 +60,7 @@ html, body {
 }
 
 .sectionText {
-  margin-top: 20px;
+  margin-top: 60px;
   color: #5c4436;
   font-size: 20px;
 }
@@ -225,6 +225,7 @@ margin-bottom: 6px;
 
 .innerParag{
   color: grey;
+  text-align: left;
 }
 
 .reservationDiv{

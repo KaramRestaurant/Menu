@@ -57,7 +57,7 @@ function App() {
     { firstName: 'Labneh + vegetables', secondName: 'لبنة + خضرة', price: '500,000 LBP', image: Labneh },
     { firstName: 'Chankliche', secondName: 'شنكليشة', price: '450,000 LBP', image: Shanklish },
     { firstName: 'Feuille de vigne', secondName: 'ورق عنب', price: '400,000 LBP', image: Leaves },
-    { firstName: 'Fatte Grape Leaves', secondName: 'قتة ورق عنب', price: '500,000 LBP', image: Fateteenab }
+    { firstName: 'Fatte Grape Leaves', secondName: 'فتة ورق عنب', price: '500,000 LBP', image: Fateteenab }
   ]
 
   const hotMezza = [
