@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://michellanajib2000-web.github.io/Test/",
+  "homepage": "https://KaramRestaurant.github.io/Menu",
   "type": "module",
   "scripts": {
     "dev": "vite",
