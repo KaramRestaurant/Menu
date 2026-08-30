@@ -41,9 +41,12 @@ import BeidAwarma from './assets/BeidAwarma.jpeg'
 import Zaatar from './assets/Zaatar.jpeg'
 import Arguile from './assets/arguile.jpeg'
 import Veggies from './assets/veggies.jpeg'
+import LabnehBreakfast from './assets/LabnehBreakfast.jpeg'
+import ShanklishBreakfast from './assets/ShanklishBreakfast.jpeg'
+
 function App() {
   const [selected, setSelected] = useState('Menu')
-  const [selection, setSelection] = useState('Cold Mezza')
+  const [selection, setSelection] = useState('Breakfast')
   const items = [
     "Pizza",
     "Burger",
@@ -204,12 +207,12 @@ function App() {
       price: '350,000 LBP',
       image:Omelette
     },
-    { firstName: 'Labneh', secondName: 'لبنة', price: '450,000 LBP',image:Labneh },
+    { firstName: 'Labneh', secondName: 'لبنة', price: '450,000 LBP',image:LabnehBreakfast },
     {
       firstName: 'Beid',
       secondName: 'بيض', price: '100,000 LBP',image:Beid,
     },
-    { firstName: 'Shanklish', secondName: 'شنكليش', price: '450,000 LBP',image:Shanklish },
+    { firstName: 'Shanklish', secondName: 'شنكليش', price: '450,000 LBP',image:ShanklishBreakfast },
     {
       firstName: 'Zaatar/Zaytoun',
       secondName: 'زعتر/زيتون',
