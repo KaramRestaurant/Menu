@@ -291,7 +291,7 @@ function App() {
                 <div className="menu-container-main">
                   <div className="menu-container">
                     {coldMezza.map((item, index) => (
-                      <div key={index} className="menu-item">
+                      <div key={item.name+"_"+index} className="menu-item">
                         <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                       </div>
                     ))}
@@ -307,7 +307,7 @@ function App() {
                   <div className="menu-container-main">
                     <div className="menu-container">
                       {hotMezza.map((item, index) => (
-                        <div key={index} className="menu-item">
+                        <div key={item.name+"_"+index} className="menu-item">
                           <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                         </div>
                       ))}
@@ -321,7 +321,7 @@ function App() {
                     <div className="menu-container-main">
                       <div className="menu-container">
                         {salads.map((item, index) => (
-                          <div key={index} className="menu-item">
+                          <div key={item.name+"_"+index} className="menu-item">
                             <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
 
                           </div>
@@ -338,7 +338,7 @@ function App() {
                       <div className="menu-container-main">
                         <div className="menu-container">
                           {mashewe.map((item, index) => (
-                            <div key={index} className="menu-item">
+                            <div key={item.name+"_"+index} className="menu-item">
                               <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                             </div>
                           ))}
@@ -350,7 +350,7 @@ function App() {
                         <div className="menu-container-main">
                           <div className="menu-container">
                             {kebbeoras.map((item, index) => (
-                              <div key={index} className="menu-item">
+                              <div key={item.name+"_"+index} className="menu-item">
                                 <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                               </div>
                             ))}
@@ -362,7 +362,7 @@ function App() {
                           <div className="menu-container-main">
                             <div className="menu-container">
                               {Dessert.map((item, index) => (
-                                <div key={index} className="menu-item">
+                                <div key={item.name+"_"+index} className="menu-item">
                                   <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                 </div>
                               ))}
@@ -374,7 +374,7 @@ function App() {
                           <div className="menu-container-main">
                             <div className="menu-container">
                               {Drinks.map((item, index) => (
-                                <div key={index} className="menu-item">
+                                <div key={item.name+"_"+index} className="menu-item">
                                   <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                 </div>
                               ))}
@@ -387,7 +387,7 @@ function App() {
                             <div className="menu-container-main">
                               <div className="menu-container">
                                 {Breakfast.map((item, index) => (
-                                  <div key={index} className="menu-item">
+                                  <div key={item.name+"_"+index} className="menu-item">
                                     <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                   </div>
                                 ))}
@@ -399,7 +399,7 @@ function App() {
                               <div className="menu-container-main">
                                 <div className="menu-container">
                                   {Tobacco.map((item, index) => (
-                                    <div key={index} className="menu-item">
+                                    <div key={item.name+"_"+index} className="menu-item">
                                       <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                     </div>
                                   ))}
@@ -411,7 +411,7 @@ function App() {
                                 <div className="menu-container-main">
                                   <div className="menu-container">
                                     {Sandwiches.map((item, index) => (
-                                      <div key={index} className="menu-item">
+                                      <div key={item.name+"_"+index} className="menu-item">
                                         <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                       </div>
                                     ))}
