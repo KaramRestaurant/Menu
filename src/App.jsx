@@ -54,6 +54,8 @@ import WaterBottle from './assets/WaterBottle.jpeg'
 import CoffeeCup from './assets/CoffeeCup.jpg'
 import Pepsi from './assets/Pepsi.jpeg'
 import CoffeeSmall from './assets/CoffeeSmall.jpg'
+import FattouchAndCheese from './assets/FattouchAndCheese.jpg'
+import KebbeNaye from './assets/KebbeNaye.jpeg'
 
 function App() {
   const [selected, setSelected] = useState('Menu')
@@ -103,7 +105,7 @@ function App() {
     { firstName: 'Rocca', secondName: 'روكا', price: '400,000 LBP' },
     { firstName: 'Tabbouleh', secondName: 'تبولة', price: '450,000 LBP', image: Tabbouleh },
     { firstName: 'Fattouch', secondName: 'فتوش', price: '450,000 LBP', image: Fattouch },
-    { firstName: 'Fattouch + Fromage', secondName: 'فتوش + جبنة', price: '550,000 LBP' },
+    { firstName: 'Fattouch + Fromage', secondName: 'فتوش + جبنة', price: '550,000 LBP',image:FattouchAndCheese },
     { firstName: 'Hendbe', secondName: 'هندبة', price: '400,000 LBP', image: Hendbe },
   ]
 
@@ -112,11 +114,9 @@ function App() {
     { firstName: 'Kafta/Kabab 200g', secondName: 'كفتة/كباب', price: '750,000 LBP', image: Mashewe },
     { firstName: 'Aarayes Kafta/Kabab', secondName: ' عرايس كفتة/ كباب', price: '800,000 LBP' },
     { firstName: 'Tawouk 200g', secondName: 'طاووق', price: '700,000 LBP', image: Mashewe },
-    { firstName: 'Kebbe crue', secondName: 'كبة نية', price: '900,000 LBP' },
+    { firstName: 'Kebbe crue', secondName: 'كبة نية', price: '900,000 LBP',image:KebbeNaye },
     { firstName: 'Mix Barbecue 1kg', secondName: 'مشاوي مشكل', price: '3,600,000 LBP', image: MixMashewe },
     { firstName: 'Poulet grille', secondName: 'دجاج مشوي', price: '1,700,000 LBP', image: Mashewe },
-    { firstName: 'Kebbe grille graise', secondName: 'قرص كبة شحمة', price: '350,000 LBP', image: Kebbe },
-    { firstName: 'Kebbe grille viande', secondName: 'قرص كبة لحمة', price: '400,000 LBP', image: Kebbe },
   ]
 
   const Tobacco = [
@@ -179,36 +179,43 @@ function App() {
       firstName: 'kores lahme',
       secondName: 'قرص لحمة ',
       price: '400,000 LBP',
+      image:Kebbe
     },
     {
       firstName: 'kores shahme',
       secondName: 'قرص شحمة',
       price: '350,000 LBP',
+      image:Kebbe
     },
     {
       firstName: 'kores jebne',
       secondName: 'قرص جبنة ',
       price: '400,000 LBP',
+      image:Kebbe
     },
     {
       firstName: 'kores halabe',
       secondName: 'قرص حلبي',
       price: '400,000 LBP',
+      image:Kebbe
     },
     {
       firstName: 'kores Bone marroow',
       secondName: 'قرص نخاع',
       price: '500,000 LBP',
+      image:Kebbe
     },
     {
       firstName: 'kores samak',
       secondName: 'قرص سمك',
       price: '500,000 LBP',
+      image:Kebbe
     },
     {
       firstName: 'kores djej',
       secondName: 'قرص دجاج',
       price: '400,000 LBP',
+      image:Kebbe
     },
   ]
 
