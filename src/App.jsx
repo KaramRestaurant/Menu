@@ -35,7 +35,12 @@ import OldPicture from './assets/Oldpicture.jpeg'
 import Ambiance from './assets/Ambiance.jpeg'
 import Ambiance2 from './assets/Ambiance2.jpeg'
 import FoodMenu from './FoodMenu.jsx';
-
+import Beid from './assets/beid.jpeg';
+import Omelette from './assets/Omelette.jpeg'
+import BeidAwarma from './assets/BeidAwarma.jpeg'
+import Zaatar from './assets/Zaatar.jpeg'
+import Arguile from './assets/arguile.jpeg'
+import Veggies from './assets/veggies.jpeg'
 function App() {
   const [selected, setSelected] = useState('Menu')
   const [selection, setSelection] = useState('Cold Mezza')
@@ -101,7 +106,7 @@ function App() {
   ]
 
   const Tobacco = [
-    { firstName: 'Arguile', secondName: 'نرجيلة', price: '900,000 LBP' }
+    { firstName: 'Arguile', secondName: 'نرجيلة', price: '900,000 LBP',image:Arguile }
   ]
 
   const Drinks = [
@@ -154,55 +159,84 @@ function App() {
     { firstName: 'Ftayer', secondName: 'فطاير', price: '100,000 LBP' }
   ]
 
-  const kebbeoras= [
-    { firstName: 'kores lahme', 
-secondName: 'قرص لحمة ', 
-price: '400,000 LBP',  },
-    { firstName: 'kores shahme', 
-secondName: 'قرص شحمة', 
-price: '350,000 LBP',  },
-    { firstName: 'kores jebne', 
-secondName: 'قرص جبنة ', 
-price: '400,000 LBP',
- },
-    { firstName: 'kores halabe', 
-secondName: 'قرص حلبي', 
-price: '400,000 LBP',  },
-    { firstName: 'kores Bone marroow', 
-secondName: 'قرص نخاع', 
-price: '500,000 LBP', },
-    { firstName: 'kores samak', 
-secondName: 'قرص سمك',
-price: '500,000 LBP',  },
-    { firstName: 'kores djej', 
-secondName: 'قرص دجاج', 
-price: '400,000 LBP',  },
+  const kebbeoras = [
+    {
+      firstName: 'kores lahme',
+      secondName: 'قرص لحمة ',
+      price: '400,000 LBP',
+    },
+    {
+      firstName: 'kores shahme',
+      secondName: 'قرص شحمة',
+      price: '350,000 LBP',
+    },
+    {
+      firstName: 'kores jebne',
+      secondName: 'قرص جبنة ',
+      price: '400,000 LBP',
+    },
+    {
+      firstName: 'kores halabe',
+      secondName: 'قرص حلبي',
+      price: '400,000 LBP',
+    },
+    {
+      firstName: 'kores Bone marroow',
+      secondName: 'قرص نخاع',
+      price: '500,000 LBP',
+    },
+    {
+      firstName: 'kores samak',
+      secondName: 'قرص سمك',
+      price: '500,000 LBP',
+    },
+    {
+      firstName: 'kores djej',
+      secondName: 'قرص دجاج',
+      price: '400,000 LBP',
+    },
   ]
 
   const Breakfast = [
-    { firstName: 'Labneh', secondName: 'لبنة', price: '450,000 LBP', },
-    { firstName: 'Beid', 
-secondName: 'بيض', price: '100,000 LBP',  },
-    { firstName: 'Shanklish', secondName: 'شنكليش', price: '450,000 LBP',  },
-    { firstName: 'Zaatar/Zaytoun', 
-secondName: 'زعتر/زيتون', 
-price: '300,000 LBP',  },
-    { firstName: 'Khodra', 
-secondName: 'خضار', 
-price: '300,000 LBP',  },
-    { firstName: 'Omelette', 
-secondName: 'أومليت', 
-price: '350,000 LBP', },
-    { firstName: 'Beid Awarma',
-secondName: 'بيض قورنا', 
-price: '500,000 LBP',  },
+      {
+      firstName: 'Omelette',
+      secondName: 'أومليت',
+      price: '350,000 LBP',
+      image:Omelette
+    },
+    { firstName: 'Labneh', secondName: 'لبنة', price: '450,000 LBP',image:Labneh },
+    {
+      firstName: 'Beid',
+      secondName: 'بيض', price: '100,000 LBP',image:Beid,
+    },
+    { firstName: 'Shanklish', secondName: 'شنكليش', price: '450,000 LBP',image:Shanklish },
+    {
+      firstName: 'Zaatar/Zaytoun',
+      secondName: 'زعتر/زيتون',
+      price: '300,000 LBP',
+      image:Zaatar
+    },
+    {
+      firstName: 'Khodra',
+      secondName: 'خضار',
+      price: '300,000 LBP',
+      image:Veggies
+    },
+    {
+      firstName: 'Beid Awarma',
+      secondName: 'بيض قورنا',
+      price: '500,000 LBP',
+      image:BeidAwarma
+    },
   ]
 
   const Sandwiches = [
     { firstName: 'Kafta', secondName: 'كفتة', price: '400,000 LBP', },
-    { firstName: 'Lahme', 
-secondName: 'لحمة', price: '400,000 LBP',  },
-    { firstName: 'Tawouk', secondName: 'طاووق', price: '400,000 LBP',  },
+    {
+      firstName: 'Lahme',
+      secondName: 'لحمة', price: '400,000 LBP',
+    },
+    { firstName: 'Tawouk', secondName: 'طاووق', price: '400,000 LBP', },
     { firstName: 'Batata', secondName: 'بطاطا', price: '300,000 LBP', }
   ]
 
@@ -299,52 +333,52 @@ secondName: 'لحمة', price: '400,000 LBP',  },
                       <div>
                         <p className="sectionText"><span className="redLetter">K</span>ebab<span className="redLetter"> 2</span>ras</p>
                         <div className="menu-container-main">
-                        <div className="menu-container">
-                          {kebbeoras.map((item, index) => (
-                            <div key={index} className="menu-item">
-                              <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
-                            </div>
-                          ))}
+                          <div className="menu-container">
+                            {kebbeoras.map((item, index) => (
+                              <div key={index} className="menu-item">
+                                <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
+                              </div>
+                            ))}
+                          </div>
                         </div>
-                      </div>
                       </div> : selection == 'Dessert' ?
-                        <div> 
+                        <div>
                           <p className="sectionText"><span className="redLetter">D</span>essert</p>
                           <div className="menu-container-main">
-                        <div className="menu-container">
-                          {Dessert.map((item, index) => (
-                            <div key={index} className="menu-item">
-                              <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
+                            <div className="menu-container">
+                              {Dessert.map((item, index) => (
+                                <div key={index} className="menu-item">
+                                  <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
+                                </div>
+                              ))}
                             </div>
-                          ))}
-                        </div>
-                      </div>
-                          </div> :
+                          </div>
+                        </div> :
                         selection == 'Drinks' ? <div>
                           <p className="sectionText"><span className="redLetter">D</span>rinks</p>
-                            <div className="menu-container-main">
-                           <div className="menu-container">
-                                  {Drinks.map((item, index) => (
-                                    <div key={index} className="menu-item">
-                                      <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
-                                    </div>
-                                  ))}
+                          <div className="menu-container-main">
+                            <div className="menu-container">
+                              {Drinks.map((item, index) => (
+                                <div key={index} className="menu-item">
+                                  <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                 </div>
-                                </div>
-                          </div> :
+                              ))}
+                            </div>
+                          </div>
+                        </div> :
                           selection == 'Breakfast' ? <div>
                             <p className="sectionText"><span className="redLetter">B</span>reakfast</p>
-                            
-                                 <div className="menu-container-main">
-                           <div className="menu-container">
-                                  {Breakfast.map((item, index) => (
-                                    <div key={index} className="menu-item">
-                                      <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
-                                    </div>
-                                  ))}
-                                </div>
-                                </div>
-                            </div> :
+
+                            <div className="menu-container-main">
+                              <div className="menu-container">
+                                {Breakfast.map((item, index) => (
+                                  <div key={index} className="menu-item">
+                                    <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          </div> :
                             selection == 'Tobaco' ? <div>
                               <p className="sectionText"><span className="redLetter">T</span>obaco</p>
                               <div className="menu-container-main">
@@ -358,17 +392,17 @@ secondName: 'لحمة', price: '400,000 LBP',  },
                               </div>
                             </div> :
                               selection == 'Sandwiches' ? <div><p className="sectionText"><span className="redLetter">S</span>andwiches</p>
-                              
-                                                         <div className="menu-container-main">
-                           <div className="menu-container">
-                                  {Sandwiches.map((item, index) => (
-                                    <div key={index} className="menu-item">
-                                      <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
-                                    </div>
-                                  ))}
+
+                                <div className="menu-container-main">
+                                  <div className="menu-container">
+                                    {Sandwiches.map((item, index) => (
+                                      <div key={index} className="menu-item">
+                                        <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
+                                      </div>
+                                    ))}
+                                  </div>
                                 </div>
-                                </div>
-                              
+
                               </div> :
                                 selection == 'Bel Makle' ? <div><p className="sectionText"><span className="redLetter">B</span>el <span className="redLetter">M</span>akle</p></div>
 
