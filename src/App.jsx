@@ -418,9 +418,7 @@ function App() {
                                   </div>
                                 </div>
 
-                              </div> :
-                                selection == 'Bel Makle' ? <div><p className="sectionText"><span className="redLetter">B</span>el <span className="redLetter">M</span>akle</p></div>
-
+                              </div>
                                   : null
             }
 

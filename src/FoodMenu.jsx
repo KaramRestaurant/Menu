@@ -6,7 +6,6 @@ const sections = [
     "Cold Mezza",
     "Hot Mezza",
     "Salads",
-    "Bel Makle",
     "Kebab 2ras",
     "Mashewe",
     "Sandwiches",
@@ -16,7 +15,7 @@ const sections = [
 ];
 
 export default function FoodMenu(props) {
-    const [activeSection, setActiveSection] = useState("Cold Mezza");
+    const [activeSection, setActiveSection] = useState("Breakfast");
     const menuRef = useRef(null);
 
     function selectSection(section, event) {
