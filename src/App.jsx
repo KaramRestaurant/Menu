@@ -43,6 +43,17 @@ import Arguile from './assets/arguile.jpeg'
 import Veggies from './assets/veggies.jpeg'
 import LabnehBreakfast from './assets/LabnehBreakfast.jpeg'
 import ShanklishBreakfast from './assets/ShanklishBreakfast.jpeg'
+import AlmazaBeer from './assets/AlmazaBeer.jpeg'
+import BeirouthBeer from './assets/BeirouthBeer.jpeg'
+import MexicanBeer from './assets/MexicanBeer.jpeg'
+import ArakCup from './assets/ArakCup.jpeg'
+import ArakPitcher from './assets/ArakPitcher.jpeg'
+import Nescafe from './assets/Nescafe.jpg'
+import Tea from './assets/Tea.jpg'
+import WaterBottle from './assets/WaterBottle.jpeg'
+import CoffeeCup from './assets/CoffeeCup.jpg'
+import Pepsi from './assets/Pepsi.jpeg'
+import CoffeeSmall from './assets/CoffeeSmall.jpg'
 
 function App() {
   const [selected, setSelected] = useState('Menu')
@@ -113,49 +124,50 @@ function App() {
   ]
 
   const Drinks = [
-    { firstName: 'Boissons gazeuses', secondName: 'مشروبات غازية', price: '100,000 LBP' },
+    { firstName: 'Boissons gazeuses', secondName: 'مشروبات غازية', price: '100,000 LBP',image:Pepsi },
 
-    { firstName: 'Almaza Beer', secondName: 'ألمازا', price: '300,000 LBP', },
+    { firstName: 'Almaza Beer', secondName: 'ألمازا', price: '300,000 LBP',image:AlmazaBeer },
 
-    { firstName: 'Beirouth Beer', secondName: 'بيروت', price: '250,000 LBP', },
+    { firstName: 'Beirouth Beer', secondName: 'بيروت', price: '250,000 LBP',image:BeirouthBeer },
 
-    { firstName: 'Mexican Beer', secondName: 'مكسيكان', price: '300,000 LBP', },
+    { firstName: 'Mexican Beer', secondName: 'مكسيكان', price: '300,000 LBP',image:MexicanBeer },
 
     {
       firstName: 'Arak 1 cup',
       secondName: 'عرق كاس',
-      price: '300,000 LBP'
+      price: '300,000 LBP',
+      image:ArakCup
     },
 
     {
       firstName: 'Arak 1/4L',
-      secondName: 'عرق ربعية', price: '700,000 LBP'
+      secondName: 'عرق ربعية', price: '700,000 LBP',image:ArakPitcher
     },
 
     {
       firstName: 'Nescafe',
-      secondName: 'نسكافيه', price: '200,000 LBP'
+      secondName: 'نسكافيه', price: '200,000 LBP',image:Nescafe
     },
 
-    { firstName: 'Café', secondName: 'قهوة', price: '200,000 LBP' },
+    { firstName: 'Café', secondName: 'قهوة', price: '200,000 LBP',image:CoffeeCup },
 
     {
       firstName: 'Café (S)',
-      secondName: 'قهوة ركوة زغيرة', price: '450,000 LBP'
+      secondName: 'قهوة ركوة زغيرة', price: '450,000 LBP',image:CoffeeSmall
     },
 
     {
       firstName: 'Café (M)',
-      secondName: 'قهوة ركوة وسط', price: '500,000 LBP'
+      secondName: 'قهوة ركوة وسط', price: '500,000 LBP',image:CoffeeSmall
     },
 
     {
       firstName: 'Café (L)',
-      secondName: 'قهوة ركوة كبيرة', price: '600,000 LBP'
+      secondName: 'قهوة ركوة كبيرة', price: '600,000 LBP',image:CoffeeSmall
     },
 
-    { firstName: 'Tea', secondName: 'شاي', price: '200,000 LBP' },
-    { firstName: 'Eau', secondName: 'مياه كبيرة', price: '100,000 LBP' },
+    { firstName: 'Tea', secondName: 'شاي', price: '200,000 LBP',image:Tea },
+    { firstName: 'Eau', secondName: 'مياه كبيرة', price: '100,000 LBP',image:WaterBottle },
 
   ]
   const Dessert = [
