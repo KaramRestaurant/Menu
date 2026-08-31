@@ -56,6 +56,8 @@ import Pepsi from './assets/Pepsi.jpeg'
 import CoffeeSmall from './assets/CoffeeSmall.jpg'
 import FattouchAndCheese from './assets/FattouchAndCheese.jpg'
 import KebbeNaye from './assets/KebbeNaye.jpeg'
+import GhameNew from './assets/GhameNew.jpeg'
+import Tabliye from './assets/Tabliye.jpeg'
 
 function App() {
   const [selected, setSelected] = useState('Menu')
@@ -97,7 +99,7 @@ function App() {
     { firstName: 'Oeuf du Mouton', secondName: 'بيض غنم', price: '700,000 LBP' },
     { firstName: 'Snasel', secondName: 'سناسل', price: '700,000 LBP' },
     { firstName: 'Marrows', secondName: 'نخاعات', price: '700,000 LBP' },
-    { firstName: 'Fweregh', secondName: 'فوارغ', price: '1,300,000 LBP', image: Fweregh }
+    { firstName: 'Fweregh', secondName: 'فوارغ', price: '1,300,000 LBP', image: GhameNew }
   ]
 
   const salads = [
@@ -119,6 +121,11 @@ function App() {
     { firstName: 'Poulet grille', secondName: 'دجاج مشوي', price: '1,700,000 LBP', image: Mashewe },
   ]
 
+  const naye =[
+      { firstName: 'Kebbe naye', secondName: 'كبة نية', price: '900,000 LBP',image:KebbeNaye },
+    { firstName: 'Tabliye naye', secondName: 'طبلية نية', price: '2,225,000 LBP',image:Tabliye },
+
+  ]
   const Tobacco = [
     { firstName: 'Arguile', secondName: 'نرجيلة', price: '900,000 LBP',image:Arguile }
   ]
@@ -413,7 +420,8 @@ function App() {
                                 </div>
                               </div>
                             </div> :
-                              selection == 'Sandwiches' ? <div><p className="sectionText"><span className="redLetter">S</span>andwiches</p>
+                              selection == 'Sandwiches' ? <div>
+                                <p className="sectionText"><span className="redLetter">S</span>andwiches</p>
 
                                 <div className="menu-container-main">
                                   <div className="menu-container">
@@ -426,7 +434,17 @@ function App() {
                                 </div>
 
                               </div>
-                                  : null
+                                  :selection=="Naye"? <div><p className="sectionText"><span className="redLetter">N</span>aye</p>
+    <div className="menu-container-main">
+                                  <div className="menu-container">
+                                    {naye.map((item, index) => (
+                                      <div key={item.firstName+"_"+index} className="menu-item">
+                                        <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+</div>:null
             }
 
 

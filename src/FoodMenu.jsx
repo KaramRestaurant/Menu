@@ -8,6 +8,7 @@ const sections = [
     "Salads",
     "Kebab 2ras",
     "Mashewe",
+    "Naye",
     "Sandwiches",
     "Drinks",
     "Tobaco",
