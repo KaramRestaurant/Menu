@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Logo from './assets/Logo.png'
 import './App.css'
 import wallpaper from "./assets/wallpaper.jpeg";
+import wallpaperBig from "./assets/WallpaperBig.jpeg";
 import Divider from './Divider.jsx'
 import Item from './item.jsx'
 import ItemSquare from './ItemSquare.jsx';
@@ -279,7 +280,7 @@ function App() {
   }
 
   return (
-    <div className="hero" style={{ backgroundImage: `url(${wallpaper})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',backgroundPosition:'center' }}>
+    <div className="hero" style={{ backgroundImage: `url(${wallpaperBig})`, backgroundRepeat: 'repeat', backgroundSize: 'auto' }}>
 
       <nav className="navbar">
 
