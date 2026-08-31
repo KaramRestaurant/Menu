@@ -279,7 +279,7 @@ function App() {
   }
 
   return (
-    <div className="hero" style={{ backgroundImage: `url(${wallpaper})`, backgroundRepeat: 'repeat', backgroundSize: 'auto' }}>
+    <div className="hero" style={{ backgroundImage: `url(${wallpaper})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',backgroundPosition:'center' }}>
 
       <nav className="navbar">
 
