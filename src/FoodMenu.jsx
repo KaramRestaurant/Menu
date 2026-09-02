@@ -10,6 +10,7 @@ const sections = [
     "Mashewe",
     "Naye",
     "Sandwiches",
+    "Specialties",
     "Drinks",
     "Tobaco",
     "Dessert",

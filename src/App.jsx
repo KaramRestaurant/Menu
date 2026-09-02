@@ -59,6 +59,12 @@ import FattouchAndCheese from './assets/FattouchAndCheese.jpg'
 import KebbeNaye from './assets/KebbeNaye.jpeg'
 import GhameNew from './assets/GhameNew.jpeg'
 import Tabliye from './assets/Tabliye.jpeg'
+import HommosHar from './assets/HommosHar.jpeg'
+import JebnehKaraz from './assets/JebnehKaraz.jpeg'
+import KaftaTefeh from './assets/KaftaTefeh.jpeg'
+import LahmePesto from './assets/LahmePesto.jpeg'
+import HummusLahme from './assets/HummusLahme.jpeg'
+import KaftaKaraz from './assets/KaftaKaraz.jpeg'
 
 function App() {
   const [selected, setSelected] = useState('Menu')
@@ -108,7 +114,7 @@ function App() {
     { firstName: 'Rocca', secondName: 'روكا', price: '400,000 LBP' },
     { firstName: 'Tabbouleh', secondName: 'تبولة', price: '450,000 LBP', image: Tabbouleh },
     { firstName: 'Fattouch', secondName: 'فتوش', price: '450,000 LBP', image: Fattouch },
-    { firstName: 'Fattouch + Fromage', secondName: 'فتوش + جبنة', price: '550,000 LBP',image:FattouchAndCheese },
+    { firstName: 'Fattouch + Fromage', secondName: 'فتوش + جبنة', price: '550,000 LBP', image: FattouchAndCheese },
     { firstName: 'Hendbe', secondName: 'هندبة', price: '400,000 LBP', image: Hendbe },
   ]
 
@@ -117,65 +123,65 @@ function App() {
     { firstName: 'Kafta/Kabab 200g', secondName: 'كفتة/كباب', price: '750,000 LBP', image: Mashewe },
     { firstName: 'Aarayes Kafta/Kabab', secondName: ' عرايس كفتة/ كباب', price: '800,000 LBP' },
     { firstName: 'Tawouk 200g', secondName: 'طاووق', price: '700,000 LBP', image: Mashewe },
-    { firstName: 'Kebbe crue', secondName: 'كبة نية', price: '900,000 LBP',image:KebbeNaye },
+    { firstName: 'Kebbe crue', secondName: 'كبة نية', price: '900,000 LBP', image: KebbeNaye },
     { firstName: 'Mix Barbecue 1kg', secondName: 'مشاوي مشكل', price: '3,600,000 LBP', image: MixMashewe },
     { firstName: 'Poulet grille', secondName: 'دجاج مشوي', price: '1,700,000 LBP', image: Mashewe },
   ]
 
-  const naye =[
-      { firstName: 'Kebbe naye', secondName: 'كبة نية', price: '900,000 LBP',image:KebbeNaye },
-    { firstName: 'Tabliye naye', secondName: 'طبلية نية', price: '2,225,000 LBP',image:Tabliye },
+  const naye = [
+    { firstName: 'Kebbe naye', secondName: 'كبة نية', price: '900,000 LBP', image: KebbeNaye },
+    { firstName: 'Tabliye naye', secondName: 'طبلية نية', price: '2,225,000 LBP', image: Tabliye },
 
   ]
   const Tobacco = [
-    { firstName: 'Arguile', secondName: 'نرجيلة', price: '900,000 LBP',image:Arguile }
+    { firstName: 'Arguile', secondName: 'نرجيلة', price: '900,000 LBP', image: Arguile }
   ]
 
   const Drinks = [
-    { firstName: 'Boissons gazeuses', secondName: 'مشروبات غازية', price: '100,000 LBP',image:Pepsi },
+    { firstName: 'Boissons gazeuses', secondName: 'مشروبات غازية', price: '100,000 LBP', image: Pepsi },
 
-    { firstName: 'Almaza Beer', secondName: 'ألمازا', price: '300,000 LBP',image:AlmazaBeer },
+    { firstName: 'Almaza Beer', secondName: 'ألمازا', price: '300,000 LBP', image: AlmazaBeer },
 
-    { firstName: 'Beirouth Beer', secondName: 'بيروت', price: '250,000 LBP',image:BeirouthBeer },
+    { firstName: 'Beirouth Beer', secondName: 'بيروت', price: '250,000 LBP', image: BeirouthBeer },
 
-    { firstName: 'Mexican Beer', secondName: 'مكسيكان', price: '300,000 LBP',image:MexicanBeer },
+    { firstName: 'Mexican Beer', secondName: 'مكسيكان', price: '300,000 LBP', image: MexicanBeer },
 
     {
       firstName: 'Arak 1 cup',
       secondName: 'عرق كاس',
       price: '300,000 LBP',
-      image:ArakCup
+      image: ArakCup
     },
 
     {
       firstName: 'Arak 1/4L',
-      secondName: 'عرق ربعية', price: '700,000 LBP',image:ArakPitcher
+      secondName: 'عرق ربعية', price: '700,000 LBP', image: ArakPitcher
     },
 
     {
       firstName: 'Nescafe',
-      secondName: 'نسكافيه', price: '200,000 LBP',image:Nescafe
+      secondName: 'نسكافيه', price: '200,000 LBP', image: Nescafe
     },
 
-    { firstName: 'Café', secondName: 'قهوة', price: '200,000 LBP',image:CoffeeCup },
+    { firstName: 'Café', secondName: 'قهوة', price: '200,000 LBP', image: CoffeeCup },
 
     {
       firstName: 'Café (S)',
-      secondName: 'قهوة ركوة زغيرة', price: '450,000 LBP',image:CoffeeSmall
+      secondName: 'قهوة ركوة زغيرة', price: '450,000 LBP', image: CoffeeSmall
     },
 
     {
       firstName: 'Café (M)',
-      secondName: 'قهوة ركوة وسط', price: '500,000 LBP',image:CoffeeSmall
+      secondName: 'قهوة ركوة وسط', price: '500,000 LBP', image: CoffeeSmall
     },
 
     {
       firstName: 'Café (L)',
-      secondName: 'قهوة ركوة كبيرة', price: '600,000 LBP',image:CoffeeSmall
+      secondName: 'قهوة ركوة كبيرة', price: '600,000 LBP', image: CoffeeSmall
     },
 
-    { firstName: 'Tea', secondName: 'شاي', price: '200,000 LBP',image:Tea },
-    { firstName: 'Eau', secondName: 'مياه كبيرة', price: '100,000 LBP',image:WaterBottle },
+    { firstName: 'Tea', secondName: 'شاي', price: '200,000 LBP', image: Tea },
+    { firstName: 'Eau', secondName: 'مياه كبيرة', price: '100,000 LBP', image: WaterBottle },
 
   ]
   const Dessert = [
@@ -187,76 +193,171 @@ function App() {
       firstName: 'kores lahme',
       secondName: 'قرص لحمة ',
       price: '400,000 LBP',
-      image:Kebbe
+      image: Kebbe
     },
     {
       firstName: 'kores shahme',
       secondName: 'قرص شحمة',
       price: '350,000 LBP',
-      image:Kebbe
+      image: Kebbe
     },
     {
       firstName: 'kores jebne',
       secondName: 'قرص جبنة ',
       price: '400,000 LBP',
-      image:Kebbe
+      image: Kebbe
     },
     {
       firstName: 'kores halabe',
       secondName: 'قرص حلبي',
       price: '400,000 LBP',
-      image:Kebbe
+      image: Kebbe
     },
     {
       firstName: 'kores Bone marroow',
       secondName: 'قرص نخاع',
       price: '500,000 LBP',
-      image:Kebbe
+      image: Kebbe
     },
     {
       firstName: 'kores samak',
       secondName: 'قرص سمك',
       price: '500,000 LBP',
-      image:Kebbe
+      image: Kebbe
     },
     {
       firstName: 'kores djej',
       secondName: 'قرص دجاج',
       price: '400,000 LBP',
-      image:Kebbe
+      image: Kebbe
+    },
+  ]
+
+  
+  const Specialties = [
+    {
+      firstName: 'Kafta b karaz',
+      secondName: 'كفتة بكرز',
+      price: '700,000 LBP',
+      image:KaftaKaraz
+    },
+    {
+      firstName: 'Kafta b Debes',
+      secondName: 'كفتة بدبس',
+      price: '700,000 LBP',
+    },
+    {
+      firstName: 'Kafta b Teffeh',
+      secondName: 'كفتة بتفاح',
+      price: '700,000 LBP',
+      image:KaftaTefeh
+    },
+    {
+      firstName: 'Ras aasfoour Debes',
+      secondName: 'راس عصفور دبس',
+      price: '700,000 LBP',
+    },
+    {
+      firstName: 'Ras aasfoour Karaz',
+      secondName: 'راس عصفور كرز',
+      price: '700,000 LBP',
+    },
+    {
+      firstName: 'Ras aasfoour Pesto',
+      secondName: 'راس عصفور بستو',
+      price: '700,000 LBP',
+      image:LahmePesto
+    },
+    {
+      firstName: 'Ras aasfour Tefeh',
+      secondName: 'راس عصفور تفاح',
+      price: '700,000 LBP',
+    },
+    {
+      firstName: 'Fatet warak eenab',
+      secondName: 'فتة ورق عنب',
+      price: '500,000 LBP',
+    },
+    {
+      firstName: 'Batenjen B Lahme',
+      secondName: 'باذنجان مع لحمة',
+      price: '900,000 LBP',
+    },
+    {
+      firstName: 'Jebneh b Karaz',
+      secondName: 'جبنة بكرز',
+      price: '600,000 LBP',
+      image:JebnehKaraz
+    },
+    {
+      firstName: 'Jebneh b Pesto',
+      secondName: 'جبنة مع بستو',
+      price: '600,000 LBP',
+    },
+    {
+      firstName: 'Hommos Har',
+      secondName: 'حمص حرّ',
+      price: '500,000 LBP',
+      image:HommosHar
+    },
+      {
+      firstName: 'Hommos Khodra',
+      secondName: 'حمص خضرة',
+      price: '600,000 LBP',
+    },
+    {
+      firstName: 'Hommos Sejok',
+      secondName: 'حمص سجق',
+      price: '800,000 LBP',
+    },
+    {
+      firstName: 'Hommos Lahme',
+      secondName: 'حمص لحمة',
+      price: '800,000 LBP',
+      image:HummusLahme
+    },
+        {
+      firstName: 'Labneh Khodra',
+      secondName: 'لبنة خضرة',
+      price: '600,000 LBP',
+    },
+    {
+      firstName: 'Labneh Awarma',
+      secondName: 'لبنة قورما',
+      price: '800,000 LBP',
     },
   ]
 
   const Breakfast = [
-      {
+    {
       firstName: 'Omelette',
       secondName: 'أومليت',
       price: '350,000 LBP',
-      image:Omelette
+      image: Omelette
     },
-    { firstName: 'Labneh', secondName: 'لبنة', price: '450,000 LBP',image:LabnehBreakfast },
+    { firstName: 'Labneh', secondName: 'لبنة', price: '450,000 LBP', image: LabnehBreakfast },
     {
       firstName: 'Beid',
-      secondName: 'بيض', price: '100,000 LBP',image:Beid,
+      secondName: 'بيض', price: '100,000 LBP', image: Beid,
     },
-    { firstName: 'Shanklish', secondName: 'شنكليش', price: '450,000 LBP',image:ShanklishBreakfast },
+    { firstName: 'Shanklish', secondName: 'شنكليش', price: '450,000 LBP', image: ShanklishBreakfast },
     {
       firstName: 'Zaatar/Zaytoun',
       secondName: 'زعتر/زيتون',
       price: '300,000 LBP',
-      image:Zaatar
+      image: Zaatar
     },
     {
       firstName: 'Khodra',
       secondName: 'خضار',
       price: '300,000 LBP',
-      image:Veggies
+      image: Veggies
     },
     {
       firstName: 'Beid Awarma',
       secondName: 'بيض قورنا',
       price: '500,000 LBP',
-      image:BeidAwarma
+      image: BeidAwarma
     },
   ]
 
@@ -306,7 +407,7 @@ function App() {
                 <div className="menu-container-main">
                   <div className="menu-container">
                     {coldMezza.map((item, index) => (
-                      <div key={item.firstName+"_"+index} className="menu-item">
+                      <div key={item.firstName + "_" + index} className="menu-item">
                         <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                       </div>
                     ))}
@@ -322,7 +423,7 @@ function App() {
                   <div className="menu-container-main">
                     <div className="menu-container">
                       {hotMezza.map((item, index) => (
-                        <div key={item.firstName+"_"+index} className="menu-item">
+                        <div key={item.firstName + "_" + index} className="menu-item">
                           <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                         </div>
                       ))}
@@ -336,7 +437,7 @@ function App() {
                     <div className="menu-container-main">
                       <div className="menu-container">
                         {salads.map((item, index) => (
-                          <div key={item.firstName+"_"+index} className="menu-item">
+                          <div key={item.firstName + "_" + index} className="menu-item">
                             <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
 
                           </div>
@@ -353,7 +454,7 @@ function App() {
                       <div className="menu-container-main">
                         <div className="menu-container">
                           {mashewe.map((item, index) => (
-                            <div key={item.firstName+"_"+index} className="menu-item">
+                            <div key={item.firstName + "_" + index} className="menu-item">
                               <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                             </div>
                           ))}
@@ -365,7 +466,7 @@ function App() {
                         <div className="menu-container-main">
                           <div className="menu-container">
                             {kebbeoras.map((item, index) => (
-                              <div key={item.firstName+"_"+index} className="menu-item">
+                              <div key={item.firstName + "_" + index} className="menu-item">
                                 <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                               </div>
                             ))}
@@ -377,7 +478,7 @@ function App() {
                           <div className="menu-container-main">
                             <div className="menu-container">
                               {Dessert.map((item, index) => (
-                                <div key={item.firstName+"_"+index} className="menu-item">
+                                <div key={item.firstName + "_" + index} className="menu-item">
                                   <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                 </div>
                               ))}
@@ -389,7 +490,7 @@ function App() {
                           <div className="menu-container-main">
                             <div className="menu-container">
                               {Drinks.map((item, index) => (
-                                <div key={item.firstName+"_"+index} className="menu-item">
+                                <div key={item.firstName + "_" + index} className="menu-item">
                                   <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                 </div>
                               ))}
@@ -402,7 +503,7 @@ function App() {
                             <div className="menu-container-main">
                               <div className="menu-container">
                                 {Breakfast.map((item, index) => (
-                                  <div key={item.firstName+"_"+index} className="menu-item">
+                                  <div key={item.firstName + "_" + index} className="menu-item">
                                     <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                   </div>
                                 ))}
@@ -414,7 +515,7 @@ function App() {
                               <div className="menu-container-main">
                                 <div className="menu-container">
                                   {Tobacco.map((item, index) => (
-                                    <div key={item.firstName+"_"+index} className="menu-item">
+                                    <div key={item.firstName + "_" + index} className="menu-item">
                                       <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                     </div>
                                   ))}
@@ -427,7 +528,7 @@ function App() {
                                 <div className="menu-container-main">
                                   <div className="menu-container">
                                     {Sandwiches.map((item, index) => (
-                                      <div key={item.firstName+"_"+index} className="menu-item">
+                                      <div key={item.firstName + "_" + index} className="menu-item">
                                         <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                       </div>
                                     ))}
@@ -435,17 +536,30 @@ function App() {
                                 </div>
 
                               </div>
-                                  :selection=="Naye"? <div><p className="sectionText"><span className="redLetter">N</span>aye</p>
-    <div className="menu-container-main">
+                                : selection == "Naye" ? <div><p className="sectionText"><span className="redLetter">N</span>aye</p>
+                                  <div className="menu-container-main">
+                                    <div className="menu-container">
+                                      {naye.map((item, index) => (
+                                        <div key={item.firstName + "_" + index} className="menu-item">
+                                          <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
+                                        </div>
+                                      ))}
+                                    </div>
+                                  </div>
+                                </div> :    selection == 'Specialties' ? <div>
+                                <p className="sectionText"><span className="redLetter">S</span>pecialties</p>
+
+                                <div className="menu-container-main">
                                   <div className="menu-container">
-                                    {naye.map((item, index) => (
-                                      <div key={item.firstName+"_"+index} className="menu-item">
+                                    {Specialties.map((item, index) => (
+                                      <div key={item.firstName + "_" + index} className="menu-item">
                                         <ItemSquare firstText={item.firstName} secondText={item.secondName} price={item.price} image={item.image} />
                                       </div>
                                     ))}
                                   </div>
                                 </div>
-</div>:null
+
+                              </div>:null
             }
 
 
